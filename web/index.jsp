@@ -8,9 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>First Servlet</title>
   </head>
   <body>
-  $END$
+  <a href="/servlet/HelloServlet">点击通过Get请求</a>
+
+  <form action="/servlet/HelloServlet" method="post">
+    <p>name: <input type="text" name="name"></p>
+    <p><input type="submit" value="提交使用Post请求"></p>
+  </form>
+
+  
+
   </body>
 </html>
