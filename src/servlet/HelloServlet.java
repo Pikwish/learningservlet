@@ -21,16 +21,12 @@ public class HelloServlet extends HttpServlet {
             out.close();
         }
 
-
-
         //用来接收传入的用户名
 
         private String name;
-
         public String getName() {
             return name;
         }
-
         public void setName(String name) {
             this.name = name;
         }
@@ -43,9 +39,10 @@ public class HelloServlet extends HttpServlet {
             System.out.println("处理Post请求");
             response.setContentType("text/html; charset = utf-8");
             PrintWriter out = response.getWriter();
-            name = request.getParameter(",name");
+            setName(request.getParameter("name"));
             out.println("<h1>Hello"+getName()+"</h1>");
             out.flush();
             out.close();
+
         }
 }

@@ -4,13 +4,35 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-<servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>servlet.HelloServlet</servlet-class>
-</servlet>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>servlet.HelloServlet</servlet-class>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/servlet/HelloServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>RegisterForm</servlet-name>
+        <servlet-class>register.regServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterForm</servlet-name>
+        <url-pattern>/register/regServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>loginservlet</servlet-name>
+        <servlet-class>exam1.loginservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginservlet</servlet-name>
+        <url-pattern>/exam1/loginservlet</url-pattern>
     </servlet-mapping>
 </web-app>
