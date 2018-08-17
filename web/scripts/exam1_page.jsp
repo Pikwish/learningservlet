@@ -11,7 +11,7 @@
     <title>测验1：用户登录</title>
 </head>
 <body>
-<form action="exam1/loginservlet" method="post">
+<form action="/exam1/loginservlet" method="post">
     <p>用户名：<input type="text" name="username"></p>
     <p>密码：<input type="password" name="password"></p>
     <p><input type="submit" name="submit" value="提交"></p>
